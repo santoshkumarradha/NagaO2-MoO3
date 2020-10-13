@@ -1,11 +1,8 @@
 from scipy.optimize import least_squares
 import numpy as np
-from ase.io import read
-from ase.eos import calculate_eos
 from ase.io.trajectory import Trajectory
 import matplotlib.pyplot as plt
-from ase.units import Bohr, Rydberg
-from ase.io.trajectory import TrajectoryReader as trread
+from ase.units import Bohr, Rydberggit
 
 
 def murnaghan(V, E0, B0, BP, V0):
