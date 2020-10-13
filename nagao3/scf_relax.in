@@ -1,0 +1,49 @@
+&CONTROL
+  calculation = 'vc-relax',
+  nstep = 100,
+  outdir = './',
+  prefix = 'lco',
+  pseudo_dir = '/home/srr70/QE/pseudo/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/',
+  restart_mode = 'from_scratch',
+  tprnfor = .TRUE.,
+  tstress = .TRUE.,
+  verbosity = 'high',
+  wf_collect = .TRUE.,
+/
+&SYSTEM
+  degauss = 0.02,
+  ecutrho = 240.0,
+  ecutwfc = 80.0,
+  occupations = 'smearing',
+  smearing = 'mp',
+  ibrav = 0,
+  nat = 4,
+  ntyp = 3,
+/
+&ELECTRONS
+  diagonalization = 'david',
+  conv_thr=1d-8,
+/
+&IONS
+  ion_dynamics = 'bfgs',
+/
+&CELL
+  cell_dynamics = 'bfgs',
+  press = 0,
+  press_conv_thr = 0.5,
+/
+ATOMIC_SPECIES
+  Ga  69.7230 Ga.pbe-dn-kjpaw_psl.1.0.0.UPF
+  Na  22.9898 Na.pbe-spn-kjpaw_psl.1.0.0.UPF
+  O  15.9994 O.pbe-n-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS crystal
+  Na 0.000000 0.000000 0.000000
+  Ga 0.500000 0.500000 0.500000
+  O 0.233273 0.233275 0.231919
+  O 0.766727 0.766725 0.768081
+K_POINTS automatic
+  8 8 2 0 0 0
+CELL_PARAMETERS angstrom
+  2.910903 0.000000 4.852000
+  1.343809 2.582157 4.852000
+  0.000000 0.000000 5.672016

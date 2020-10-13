@@ -1,0 +1,56 @@
+&CONTROL
+  calculation = 'scf',
+  outdir = './',
+  prefix = 'lco',
+  pseudo_dir = './pseudo',
+  restart_mode = 'from_scratch',
+  tprnfor = .TRUE.,
+  tstress = .TRUE.,
+  verbosity = 'high',
+/
+&SYSTEM
+  celldm(1) = 7.107307197870638,
+  celldm(2) = 1.055378254598148,
+  celldm(3) = 4.9999986705751756,
+  degauss = 0.005,
+  ecutrho = 280.0,
+  ecutwfc = 120.0,
+  ibrav = 8,
+  occupations = 'fixed',
+  nat = 16,
+  ntyp = 2,
+/
+&ELECTRONS
+  conv_thr = 1d-10,
+  diagonalization = 'david',
+/
+&IONS
+/
+&CELL
+/
+ATOMIC_SPECIES
+  Mo  95.9400 Mo.pbesol-spn-kjpaw_psl.1.0.0.UPF
+  O  15.9994 O.pbesol-n-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS crystal
+  Mo 0.250000 0.924115 0.602487
+  Mo 0.750000 0.424115 0.897513
+  Mo 0.250000 0.575885 0.102487
+  Mo 0.750000 0.075885 0.397513
+  O 0.750000 0.978280 0.911631
+  O 0.250000 0.478280 0.588369
+  O 0.250000 0.021720 0.088369
+  O 0.750000 0.521720 0.411631
+  O 0.750000 0.463012 0.780203
+  O 0.250000 0.963012 0.719797
+  O 0.750000 0.036988 0.280203
+  O 0.250000 0.536988 0.219797
+  O 0.250000 0.496039 0.935016
+  O 0.250000 0.003961 0.435016
+  O 0.750000 0.503961 0.064984
+  O 0.750000 0.996039 0.564984
+K_POINTS automatic
+  8 8 4 0 0 0
+CELL_PARAMETERS angstrom
+  3.761025 0.000000 0.000000
+  -0.000000 3.969304 0.000000
+  0.000000 0.000000 14.425446

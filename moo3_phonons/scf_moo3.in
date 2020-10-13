@@ -1,0 +1,58 @@
+&CONTROL
+ calculation = 'relax',
+ nstep = 100,
+  outdir = './',
+  prefix = 'lco',
+  pseudo_dir = './pseudo',
+  restart_mode = 'from_scratch',
+  tprnfor = .TRUE.,
+  tstress = .TRUE.,
+  verbosity = 'high',
+/
+&SYSTEM
+  celldm(1) = 7.107307197870638,
+  celldm(2) = 1.055378254598148,
+  celldm(3) = 3.835416113,
+  ecutrho = 280.0,
+  ecutwfc = 120.0,
+  ibrav = 8,
+  occupations = 'tetrahedra_opt',
+  nat = 16,
+  ntyp = 2,
+
+/
+&ELECTRONS
+  conv_thr = 1d-8,
+  diagonalization = 'david',
+   mixing_beta=0.7,
+/
+&IONS
+ ion_dynamics = 'damp',
+ ion_damping = 0.2,
+ ion_velocities = 'zero',
+ ion_nstepe = 10
+/
+&CELL
+/
+ATOMIC_SPECIES
+  Mo  95.9400 Mo.pbesol-spn-kjpaw_psl.1.0.0.UPF
+  O  15.9994 O.pbesol-n-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS crystal
+Mo            0.2500000000        0.9250846533        0.5781081252
+Mo            0.7500000000        0.4250846533        0.9218918748
+Mo            0.2500000000        0.5749153467        0.0781081252
+Mo            0.7500000000        0.0749153467        0.4218918748
+O             0.7500000000        0.9843246243        0.9274712101
+O             0.2500000000        0.4843246243        0.5725287899
+O             0.2500000000        0.0156753757        0.0725287899
+O             0.7500000000        0.5156753757        0.4274712101
+O             0.7500000000        0.4731324667        0.8333688611
+O             0.2500000000        0.9731324667        0.6666311389
+O             0.7500000000        0.0268675333        0.3333688611
+O             0.2500000000        0.5268675333        0.1666311389
+O             0.2500000000        0.4786274929        0.9522389793
+O             0.2500000000        0.0213725071        0.4522389793
+O             0.7500000000        0.5213725071        0.0477610207
+O             0.7500000000        0.9786274929        0.5477610207
+K_POINTS automatic
+  7 7 5 0 0 0

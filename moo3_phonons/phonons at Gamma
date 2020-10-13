@@ -1,0 +1,7 @@
+phonons at Gamma
+&inputph
+prefix='lco',
+epsil=.true.,
+fildyn='dyn.G',
+tr2_ph=1.0d-14, /
+0.0 0.0 0.0

@@ -1,0 +1,46 @@
+
+#======================================================================
+# CRYSTAL DATA
+#----------------------------------------------------------------------
+data_VESTA_phase_1
+
+_chemical_name_common                  ''
+_cell_length_a                         5.466500
+_cell_length_b                         6.457051
+_cell_length_c                         5.094112
+_cell_angle_alpha                      90.000000
+_cell_angle_beta                       90.000000
+_cell_angle_gamma                      90.000000
+_cell_volume                           179.809247
+_space_group_name_H-M_alt              'P 1'
+_space_group_IT_number                 1
+
+loop_
+_space_group_symop_operation_xyz
+   'x, y, z'
+
+loop_
+   _atom_site_label
+   _atom_site_occupancy
+   _atom_site_fract_x
+   _atom_site_fract_y
+   _atom_site_fract_z
+   _atom_site_adp_type
+   _atom_site_B_iso_or_equiv
+   _atom_site_type_symbol
+   Li1         1.0     0.083583    -0.375323     0.000014    Biso  1.000000 Li
+   Li2         1.0    -0.083583     0.375323    -0.499986    Biso  1.000000 Li
+   Li3         1.0     0.416417     0.124677    -0.499986    Biso  1.000000 Li
+   Li4         1.0    -0.416417    -0.124677     0.000014    Biso  1.000000 Li
+   Ga1         1.0     0.080997     0.126126     0.004622    Biso  1.000000 Ga
+   Ga2         1.0    -0.080997    -0.126126    -0.495378    Biso  1.000000 Ga
+   Ga3         1.0     0.419003    -0.373874    -0.495378    Biso  1.000000 Ga
+   Ga4         1.0    -0.419003     0.373874     0.004622    Biso  1.000000 Ga
+   O1          1.0     0.068844     0.113504     0.373433    Biso  1.000000 O
+   O2          1.0    -0.068844    -0.113504    -0.126567    Biso  1.000000 O
+   O3          1.0     0.431156    -0.386496    -0.126567    Biso  1.000000 O
+   O4          1.0    -0.431156     0.386496     0.373433    Biso  1.000000 O
+   O5          1.0     0.092396    -0.362469     0.394985    Biso  1.000000 O
+   O6          1.0    -0.092396     0.362469    -0.105015    Biso  1.000000 O
+   O7          1.0     0.407604     0.137531    -0.105015    Biso  1.000000 O
+   O8          1.0    -0.407604    -0.137531     0.394985    Biso  1.000000 O
